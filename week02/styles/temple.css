@@ -1,0 +1,180 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background: #2a4365;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Flex navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #2a4365;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    background: #90cdf4;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #e2e8f0;
+    color: #2a4365;
+    box-shadow: 0 2px 8px rgba(42, 67, 101, 0.12);
+    outline: none;
+}
+
+/* Main element centered and limited width */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #2a4365;
+}
+
+/* Grid layout for temple gallery */
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.temple {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(42, 67, 101, 0.08);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 2px 8px rgba(42, 67, 101, 0.10);
+}
+
+.temple figcaption {
+    font-size: 1rem;
+    color: #2a4365;
+    text-align: center;
+}
+
+footer {
+    background: #2a4365;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #hamburger {
+        display: block;
+    }
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        background: #2a4365;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 1rem 0;
+    }
+    #nav-list.open {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+
+    .temple-gallery {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .temple img {
+        max-width: 100%;
+    }
+
+    .temple {
+        padding: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.7rem 0;
+    }
+    footer p {
+        margin: 0;
+    }
+}

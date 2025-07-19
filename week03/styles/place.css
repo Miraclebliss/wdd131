@@ -59,12 +59,9 @@ main {
     color: var(--primary);
 }
 
-.weather-icon {
+.weather-icon svg {
     display: inline-block;
-    width: 24px;
-    height: 24px;
     vertical-align: middle;
-    background: url('../images/weather.webp') no-repeat center/contain;
 }
 
 .weather-details {
@@ -89,17 +86,13 @@ footer {
         max-width: 100%;
         padding: 0.5rem;
     }
-    .weather h2 .weather-icon {
-        background: url('../images/weather.webp') no-repeat center/contain;
+    .weather-icon svg {
+        display: inline-block;
     }
 }
 @media (min-width: 601px) {
-    .weather h2 .weather-icon {
-        content: '';
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        background: none;
+    .weather-icon svg {
+        display: none;
     }
     .weather h2::after {
         content: "⛅";

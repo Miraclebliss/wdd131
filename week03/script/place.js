@@ -1,7 +1,6 @@
-// Footer year and last modified
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("last-modified").textContent = document.lastModified;
+    document.getElementById("last modified").textContent = document.lastModified;
 
     // Static weather values
     const temp = 24; // °C
@@ -21,4 +20,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     document.getElementById("windchill").textContent = windChill;
 });
-

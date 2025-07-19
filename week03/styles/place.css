@@ -3,7 +3,6 @@
     --secondary: #ffffff;       /* White */
     --accent: #ffd700;          /* Gold */
     --text: #222222;            /* Very dark gray */
-    --header-bg: #0057b7;       /* Deep blue */
     --weather-bg: #f3f6fa;      /* Very light blue */
 }
 
@@ -15,7 +14,7 @@ body {
 }
 
 header {
-    background: var(--header-bg);
+    background: var(--primary);
     color: var(--secondary);
     text-align: center;
     padding: 1rem 0;
@@ -72,7 +71,7 @@ main {
 }
 
 footer {
-    background: var(--header-bg);
+    background: var(--primary);
     color: var(--secondary);
     text-align: center;
     padding: 1rem 0;

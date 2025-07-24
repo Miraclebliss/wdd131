@@ -1,7 +1,7 @@
 :root {
     --primary:#003366;         /* Dark blue*/
     --secondary: #ffffff;       /* White */
-    --accent: #ffd700;          /* Gold */
+    --accent: hsla(51, 100%, 50%, 0.87);          /* Gold */
     --text: #222222;            /* Very dark gray */
     --weather-bg: #f3f6fa;      /* Very light blue */
 }

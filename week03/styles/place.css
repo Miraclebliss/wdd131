@@ -29,9 +29,17 @@ main {
     gap: 2rem;
 }
 
+main > section {
+    margin-bottom: 2rem;
+}
+
 .hero img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -39,8 +47,6 @@ main {
 .info {
     background: var(--accent);
     color: var(--text);
-    padding: 1rem;
-    border-radius: 8px;
 }
 
 .weather {

@@ -29,6 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Footer copyright year and last modified
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('2025').textContent = new Date().getFullYear();
-    document.getElementById('12/07/2025').textContent = "Last Modified: " + document.lastModified;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('last-modified').textContent = "Last Modified: " + document.lastModified;
 });

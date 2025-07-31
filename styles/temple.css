@@ -1,14 +1,9 @@
 :root {
-    --primary: #003366;
-    /* Dark blue - good contrast */
-    --secondary: #ffffff;
-    /* White */
-    --accent: #b8860b;
-    /* Dark gold - good contrast */
-    --text: #222222;
-    /* Very dark gray */
-    --card-bg: #f9f9f9;
-    /* Light gray for cards */
+    --primary: #003366; /* Dark blue - good contrast */
+    --secondary: #ffffff; /* White */
+    --accent: #b8860b; /* Dark gold - good contrast */
+    --text: #222222; /* Very dark gray */
+    --card-bg: #f9f9f9; /* Light gray for cards */
 }
 
 body {

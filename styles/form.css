@@ -80,7 +80,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background: var(--accent);
+  background: var(--primary);
   color: #fff;
   border: none;
   border-radius: var(--input-radius);
@@ -93,7 +93,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background: #e0a106;
+  background: var(--primary);
+  color: #fff;
 }
 
 .rating {
@@ -117,17 +118,22 @@ input[type="submit"]:focus {
 .rating input[type="radio"]:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
-  color: var(--accent);
+  color: #ccc;
 }
 
 .features {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
 }
-
+.features > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
 .features input[type="checkbox"] {
-  margin-right: 0.3rem;
+  margin-right: 0;
 }
 
 footer {

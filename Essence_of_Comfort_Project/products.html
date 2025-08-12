@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Essence of Comfort | Products</title>
+  <meta name="description" content="Browse our collection of oil perfumes, body sprays, and wellness products. Filter by scent or type.">
+  <meta name="author" content="Iruka Nkechi Miracle">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/my.logo.webp" alt="Essence of Comfort Logo" width="100" height="100" loading="lazy">
+      <span>Essence of Comfort</span>
+    </div>
+    <nav>
+      <button id="hamburger" aria-label="Open navigation">&#9776;</button>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Our Products</h1>
+    <div class="filters">
+      <label for="scent-filter">Filter by Scent:</label>
+      <select id="scent-filter">
+        <option value="all">All</option>
+        <option value="citrus musk">Citrus Musk</option>
+        <option value="coconut vanilla">Coconut Vanilla</option>
+        <option value="mint & sea breeze">Mint & Sea Breeze</option>
+        <option value="leather & tobacco">Leather & Tobacco</option>
+        <option value="grapefruit & bergamot">Grapefruit & Bergamot</option>
+        <option value="rose & lily">Rose & Lily</option>
+        <option value="pineapple & coconut">Pineapple & Coconut</option>
+        <option value="peppermint & eucalyptus">Peppermint & Eucalyptus</option>
+        <option value="amber & sandalwood">Amber & Sandalwood</option>
+        <option value="basil & green tea">Basil & Green Tea</option>
+        <option value="strawberry & blackcurrant">Strawberry & Blackcurrant</option>
+        <option value="oud & saffron">Oud & Saffron</option>
+        <option value="rosewater">Rosewater</option>
+        <option value="vanilla bean">Vanilla Bean</option>
+        <option value="coconut & jasmine">Coconut & Jasmine</option>
+        <option value="peach & magnolia">Peach & Magnolia</option>
+        <option value="sea salt & driftwood">Sea Salt & Driftwood</option>
+        <option value="lilac & violet">Lilac & Violet</option>
+        <option value="orange & lemon peel">Orange & Lemon Peel</option>
+        <option value="plum & black cherry">Plum & Black Cherry</option>
+        <option value="lavender & eucalyptus">Lavender & Eucalyptus</option>
+        <option value="amber & vanilla">Amber & Vanilla</option>
+        <option value="jasmine & green tea">Jasmine & Green Tea</option>
+        <option value="citrus & mint">Citrus & Mint</option>
+        <option value="oud & rose">Oud & Rose</option>
+        <option value="sandalwood & musk">Sandalwood & Musk</option>
+        <option value="lavender & chamomile">Lavender & Chamomile</option>
+        <option value="oud & frankincense">Oud & Frankincense</option>
+        <option value="amber & cardamom">Amber & Cardamom</option>
+        <option value="damask rose">Damask Rose</option>
+        <option value="cedarwood & white musk">Cedarwood & White Musk</option>
+        <option value="neroli & lemon peel">Neroli & Lemon Peel</option>
+        <option value="vanilla & clove">Vanilla & Clove</option>
+        <option value="ylang-ylang & jasmine">Ylang-Ylang & Jasmine</option>
+      </select>
+    </div>
+    <section id="product-list" class="product-list"></section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Essence of Comfort</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>

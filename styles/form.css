@@ -1,6 +1,6 @@
 :root {
-  --primary: #003366;
-  --accent: #b8860b;
+  --primary:#023047;
+  --accent: #219ebc;
   --background: #f7f7fa;
   --text: #222;
   --required: #c0392b;
@@ -93,7 +93,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-  background: var(--primary);
+  background: #205080;
   color: #fff;
 }
 
